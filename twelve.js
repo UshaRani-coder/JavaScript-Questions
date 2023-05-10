@@ -35,6 +35,6 @@ console.log(minutes);
 // number of seconds elapsed from January 1, 1970 to now
 
 let otherDate = new Date(01/01/1970)
-let secondsElapsed = (today-otherDate)/1000;
+let secondsElapsed = (today-otherDate)*1000;
 console.log(secondsElapsed);
 
