@@ -1,9 +1,3 @@
-function calculate(y,m,x,c){
-    let y = mx+c;
-    let slope = m;
-    console.log(slope);
-
-
-}
-
-calculate(1,2,3,4);
+let equation = "y=2x-2";
+ let toArray = Array.from(equation);
+ console.log(`slope is : ${toArray[2]}, x-intercept is : ${toArray[5]/toArray[2]}, y-intercept is : ${toArray[4]}${toArray[5]}`)
