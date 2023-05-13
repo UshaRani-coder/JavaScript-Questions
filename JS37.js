@@ -1,4 +1,4 @@
-                       /*signUp*/
+                     
     const users = [
     {
         _id: 'ab12ex',
@@ -41,6 +41,9 @@
         isLoggedIn: false
     }
     ];
+  
+
+ /*signUp*/
 
     let usersList = [];
     let emailsList = [];
@@ -85,6 +88,29 @@
     
 
     signUp("usha","ur220@gmail.com","4444");
+
+
+
+/*signIn*/
+
+function signIn(name,userPassword){
+   
+     users.forEach((item)=>{
+            if((item.username==name) && (item.password==userPassword)){
+                console.log("User found")
+                item.isLoggedIn = "true";
+                console.log(item)
+                console.log("Logged in Successfully!")
+
+            }
+            else{
+                console.log("Entered the wrong password")
+            }
+        })
+
+
+}                    
+signIn("Asab","123456");
     
 
                         
